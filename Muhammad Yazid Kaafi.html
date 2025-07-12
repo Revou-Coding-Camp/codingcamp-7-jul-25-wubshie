@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>To Do List - Yazid</title>
+    <link rel="stylesheet" href="CSS\style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>To Do List</h1>
+
+        <!-- Form input tugas + tanggal -->
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="What do you need to do?" />
+            <input type="date" id="date-input" />
+            <button type="submit">Add</button>
+        </form>
+
+        <!-- Kontrol filter -->
+        <div class="controls">
+            <select id="filter-select">
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="completed">Completed</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Search…" autocomplete="off" />
+        </div>
+
+        <!-- Daftar tugas -->
+        <ul id="todo-list"></ul>
+    </div>
+
+    <footer>
+        <span>© 2025 Yazid. All rights reserved.</span>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+
+</html>
